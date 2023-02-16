@@ -1,928 +1,1136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Control de Versiones</title>
-    <link
-      rel="stylesheet"
-      href="assets/vendors/themify-icons/css/themify-icons.css"
-    />
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" />
     <link rel="stylesheet" href="assets/css/creative-studio.css" />
-  </head>
+</head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <nav
-      class="navbar custom-navbar navbar-expand-lg navbar-dark"
-      data-spy="affix"
-      data-offset-top="20"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/imgs/logo.png" />
-        </a>
-        <a class="text-primary"> Glosario</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-        </button>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.png" />
+            </a>
+            <a class="text-primary"> Glosario</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Setup">Setup</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Recuperacion">Recuperación </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Snapshotting">Snapshotting</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Ramificacion">Ramificación</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Compartir">Compartir</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Inspeccion">Inspección</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Patching">Patching</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Debugging">Debugging</a>
-            </li>
-          </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Setup">Setup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Recuperacion">Recuperación </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Snapshotting">Snapshotting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Ramificacion">Ramificación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Compartir">Compartir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Inspeccion">Inspección</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Patching">Patching</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Debugging">Debugging</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <header class="header">
-      <div class="overlay">
-        <h6 class="subtitle">Inter. Web</h6>
-        <h1 class="title">Control de Versiones</h1>
-        <div class="buttons text-center">
-          <a
-            href="https://docs.google.com/document/d/1J0aQAnf3-eJWu036Gwwqvv_SE9BMxzq3gLD_Io4MnKs/edit"
-            class="btn btn-primary rounded w-lg btn-lg my-1"
-            >Actividad</a
-          >
-          <a
-            href="https://drive.google.com/drive/u/0/folders/1AVRM0IqsozcRcsnjh-85TWHNSYX10Zj2"
-            class="btn btn-outline-light rounded w-lg btn-lg my-1"
-            >Carpeta de evidencias</a
-          >
+        <div class="overlay">
+            <h6 class="subtitle">Inter. Web</h6>
+            <h1 class="title">Control de Versiones</h1>
+            <div class="buttons text-center">
+                <a href="https://docs.google.com/document/d/1J0aQAnf3-eJWu036Gwwqvv_SE9BMxzq3gLD_Io4MnKs/edit"
+                    class="btn btn-primary rounded w-lg btn-lg my-1">Actividad</a>
+                <a href="https://drive.google.com/drive/u/0/folders/1AVRM0IqsozcRcsnjh-85TWHNSYX10Zj2"
+                    class="btn btn-outline-light rounded w-lg btn-lg my-1">Carpeta de evidencias</a>
+            </div>
         </div>
-      </div>
     </header>
 
     <section id="Setup">
-      <div class="container">
-        <h6 class="section-subtitle text-center">Comandos Git</h6>
-        <h5 class="section-title text-center mb-6">Setup y configuración</h5>
-        <div class="row">
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
-                <h6 class="card-title">.git</h6>
-                <p>VCS</p>
-                <ins>
-                  <p>
-                    git [-v | --version] [-h | --help] [-C &lt;path&gt;] [-c
-                    &lt;name&gt;=&lt;value&gt;] [--exec-path[=&lt;path&gt;]]
-                    [--html-path] [--man-path] [--info-path]
-                    [-p|--paginate|-P|--no-pager] [--no-replace-objects]
-                    [--bare] [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;]
-                    [--namespace=&lt;name&gt;] [--super-prefix=&lt;path&gt;]
-                    [--config-env=&lt;name&gt;=&lt;envvar&gt;] &lt;command&gt;
-                    [&lt;args&gt;]
-                  </p>
-                </ins>
-              </div>
+        <div class="container">
+            <h6 class="section-subtitle text-center">Comandos Git</h6>
+            <h5 class="section-title text-center mb-6">Setup y configuración</h5>
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
+                            <h6 class="card-title">.git</h6>
+                            <p>VCS</p>
+                            <ins>
+                                <p>
+                                    git [-v | --version] [-h | --help] [-C &lt;path&gt;] [-c
+                                    &lt;name&gt;=&lt;value&gt;] [--exec-path[=&lt;path&gt;]]
+                                    [--html-path] [--man-path] [--info-path]
+                                    [-p|--paginate|-P|--no-pager] [--no-replace-objects]
+                                    [--bare] [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;]
+                                    [--namespace=&lt;name&gt;] [--super-prefix=&lt;path&gt;]
+                                    [--config-env=&lt;name&gt;=&lt;envvar&gt;] &lt;command&gt;
+                                    [&lt;args&gt;]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
+                            <h6 class="card-title">.config</h6>
+                            <p>
+                                Recupera y configura el repositorio o las opciones globales
+                            </p>
+                            <p>
+                                git config
+                                <ins>[&lt;file-option&gt;] [--type=&lt;type&gt;] [--fixed-value]
+                                    [--show-origin] [--show-scope] [-z|--null] &lt;name&gt;
+                                    [&lt;value&gt; [&lt;value-pattern&gt;]]</ins>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
+                            <h6 class="card-title">.help</h6>
+                            <p>Muestra información de ayuda sobre git</p>
+                            <ins>
+                                <p>
+                                    git help [-a|--all] [--[no-]verbose]
+                                    [--[no-]external-commands] [--[no-]aliases]
+                                </p>
+                                <p>
+                                    git help [[-i|--info] [-m|--man] [-w|--web]]
+                                    [&lt;command&gt;|&lt;doc&gt;]
+                                </p>
+                                <p>git help [-g|--guides]</p>
+                                <p>git help [-c|--config]</p>
+                                <p>git help [--user-interfaces]</p>
+                                <p>git help [--developer-interfaces]</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
+                            <h6 class="card-title">.bugreport</h6>
+                            <p>
+                                Recupera información para el usuario para presentar un report
+                                de bug
+                            </p>
+                            <ins>
+                                <p>
+                                    git bugreport [(-o | --output-directory) &lt;path&gt;] [(-s
+                                    | --suffix) &lt;format&gt;] [--diagnose[=&lt;mode&gt;]]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
-                <h6 class="card-title">.config</h6>
-                <p>
-                  Recupera y configura el repositorio o las opciones globales
-                </p>
-                <p>
-                  git config
-                  <ins
-                    >[&lt;file-option&gt;] [--type=&lt;type&gt;] [--fixed-value]
-                    [--show-origin] [--show-scope] [-z|--null] &lt;name&gt;
-                    [&lt;value&gt; [&lt;value-pattern&gt;]]</ins
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
-                <h6 class="card-title">.help</h6>
-                <p>Muestra información de ayuda sobre git</p>
-                <ins
-                  ><p>
-                    git help [-a|--all] [--[no-]verbose]
-                    [--[no-]external-commands] [--[no-]aliases]
-                  </p>
-                  <p>
-                    git help [[-i|--info] [-m|--man] [-w|--web]]
-                    [&lt;command&gt;|&lt;doc&gt;]
-                  </p>
-                  <p>git help [-g|--guides]</p>
-                  <p>git help [-c|--config]</p>
-                  <p>git help [--user-interfaces]</p>
-                  <p>git help [--developer-interfaces]</p></ins
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
-                <h6 class="card-title">.bugreport</h6>
-                <p>
-                  Recupera información para el usuario para presentar un report
-                  de bug
-                </p>
-                <ins>
-                  <p>
-                    git bugreport [(-o | --output-directory) &lt;path&gt;] [(-s
-                    | --suffix) &lt;format&gt;] [--diagnose[=&lt;mode&gt;]]
-                  </p>
-                </ins>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section id="Recuperacion">
-      <div class="container">
-        <h6 class="section-subtitle text-center">Comandos Git</h6>
-        <h5 class="section-title text-center mb-6">
-          Recuperación y creando proyectos
-        </h5>
-        <div class="row">
-          <div class="col-sm-4 col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
-                <h6 class="card-title">.init</h6>
-                <p>
-                  Crea un repositorio git vacío o reinicializa uno ya existente
-                </p>
-                <ins
-                  ><p>
-                    git init [-q | --quiet] [--bare]
-                    [--template=&lt;template-directory&gt;] [--separate-git-dir
-                    &lt;git-dir&gt;] [--object-format=&lt;format&gt;] [-b
-                    &lt;branch-name&gt; | --initial-branch=&lt;branch-name&gt;]
-                    [--shared[=&lt;permissions&gt;]] [&lt;directory&gt;]
-                  </p></ins
-                >
-              </div>
+        <div class="container">
+            <h6 class="section-subtitle text-center">Comandos Git</h6>
+            <h5 class="section-title text-center mb-6">
+                Recuperación y creando proyectos
+            </h5>
+            <div class="row">
+                <div class="col-sm-4 col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
+                            <h6 class="card-title">.init</h6>
+                            <p>
+                                Crea un repositorio git vacío o reinicializa uno ya existente
+                            </p>
+                            <ins>
+                                <p>
+                                    git init [-q | --quiet] [--bare]
+                                    [--template=&lt;template-directory&gt;] [--separate-git-dir
+                                    &lt;git-dir&gt;] [--object-format=&lt;format&gt;] [-b
+                                    &lt;branch-name&gt; | --initial-branch=&lt;branch-name&gt;]
+                                    [--shared[=&lt;permissions&gt;]] [&lt;directory&gt;]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
+                            <h6 class="card-title">.clone</h6>
+                            <p>Clona un repositorio a un nuevo directorio</p>
+                            <ins>
+                                <p>
+                                    git clone [--template=&lt;template-directory&gt;] [-l] [-s]
+                                    [--no-hardlinks] [-q] [-n] [--bare] [--mirror] [-o
+                                    &lt;name&gt;] [-b &lt;name&gt;] [-u &lt;upload-pack&gt;]
+                                    [--reference &lt;repository&gt;] [--dissociate]
+                                    [--separate-git-dir &lt;git-dir&gt;] [--depth &lt;depth&gt;]
+                                    [--[no-]single-branch] [--no-tags]
+                                    [--recurse-submodules[=&lt;pathspec&gt;]]
+                                    [--[no-]shallow-submodules] [--[no-]remote-submodules]
+                                    [--jobs &lt;n&gt;] [--sparse] [--[no-]reject-shallow]
+                                    [--filter=&lt;filter&gt; [--also-filter-submodules]] [--]
+                                    &lt;repository&gt; [&lt;directory&gt;]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4 col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
-                <h6 class="card-title">.clone</h6>
-                <p>Clona un repositorio a un nuevo directorio</p>
-                <ins>
-                  <p>
-                    git clone [--template=&lt;template-directory&gt;] [-l] [-s]
-                    [--no-hardlinks] [-q] [-n] [--bare] [--mirror] [-o
-                    &lt;name&gt;] [-b &lt;name&gt;] [-u &lt;upload-pack&gt;]
-                    [--reference &lt;repository&gt;] [--dissociate]
-                    [--separate-git-dir &lt;git-dir&gt;] [--depth &lt;depth&gt;]
-                    [--[no-]single-branch] [--no-tags]
-                    [--recurse-submodules[=&lt;pathspec&gt;]]
-                    [--[no-]shallow-submodules] [--[no-]remote-submodules]
-                    [--jobs &lt;n&gt;] [--sparse] [--[no-]reject-shallow]
-                    [--filter=&lt;filter&gt; [--also-filter-submodules]] [--]
-                    &lt;repository&gt; [&lt;directory&gt;]
-                  </p>
-                </ins>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section id="Snapshotting">
-      <div class="container">
-        <h6 class="section-subtitle text-center">Comandos Git</h6>
-        <h5 class="section-title text-center mb-6">Snapshotting basico</h5>
-        <div class="row">
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
-                <h6 class="card-title">.add</h6>
-                <p>Añade archivos al index</p>
-                <ins>
-                  <p>
-                    git add [--verbose | -v] [--dry-run | -n] [--force | -f]
-                    [--interactive | -i] [--patch | -p] [--edit | -e]
-                    [--[no-]all | --[no-]ignore-removal | [--update | -u]]
-                    [--sparse] [--intent-to-add | -N] [--refresh]
-                    [--ignore-errors] [--ignore-missing] [--renormalize]
-                    [--chmod=(+|-)x] [--pathspec-from-file=&lt;file&gt;
-                    [--pathspec-file-nul]] [--] [&lt;pathspec&gt;…​]
-                  </p>
-                </ins>
-              </div>
+        <div class="container">
+            <h6 class="section-subtitle text-center">Comandos Git</h6>
+            <h5 class="section-title text-center mb-6">Snapshotting basico</h5>
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
+                            <h6 class="card-title">.add</h6>
+                            <p>Añade archivos al index</p>
+                            <ins>
+                                <p>
+                                    git add [--verbose | -v] [--dry-run | -n] [--force | -f]
+                                    [--interactive | -i] [--patch | -p] [--edit | -e]
+                                    [--[no-]all | --[no-]ignore-removal | [--update | -u]]
+                                    [--sparse] [--intent-to-add | -N] [--refresh]
+                                    [--ignore-errors] [--ignore-missing] [--renormalize]
+                                    [--chmod=(+|-)x] [--pathspec-from-file=&lt;file&gt;
+                                    [--pathspec-file-nul]] [--] [&lt;pathspec&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
+                            <h6 class="card-title">.status</h6>
+                            <p>Muestra el estado actual del árbol</p>
+                            <ins>
+                                <p>git status [&lt;options&gt;] [--] [&lt;pathspec&gt;…​]</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
+                            <h6 class="card-title">.diff</h6>
+                            <p>
+                                Muestra los cambios entre commits, commit y arboles en uso.
+                            </p>
+                            <ins>
+                                <p>
+                                    git diff [&lt;options&gt;] [&lt;commit&gt;] [--]
+                                    [&lt;path&gt;…​]
+                                </p>
+                                <p>
+                                    git diff [&lt;options&gt;] --cached [--merge-base]
+                                    [&lt;commit&gt;] [--] [&lt;path&gt;…​]
+                                </p>
+                                <p>
+                                    git diff [&lt;options&gt;] [--merge-base] &lt;commit&gt;
+                                    [&lt;commit&gt; …​] &lt;commit&gt; [--] [&lt;path&gt;…​]
+                                </p>
+                                <p>
+                                    git diff [&lt;options&gt;] &lt;commit&gt;…​&lt;commit&gt;
+                                    [--] [&lt;path&gt;…​]
+                                </p>
+                                <p>git diff [&lt;options&gt;] &lt;blob&gt; &lt;blob&gt;</p>
+                                <p>
+                                    git diff [&lt;options&gt;] --no-index [--] &lt;path&gt;
+                                    &lt;path&gt;
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
+                            <h6 class="card-title">.commit</h6>
+                            <p>Graba los cambios al repositorio</p>
+                            <ins>
+                                <p>
+                                    git commit [-a | --interactive | --patch] [-s] [-v]
+                                    [-u&lt;mode&gt;] [--amend] [--dry-run] [(-c | -C | --squash)
+                                    &lt;commit&gt; | --fixup [(amend|reword):]&lt;commit&gt;)]
+                                    [-F &lt;file&gt; | -m &lt;msg&gt;] [--reset-author]
+                                    [--allow-empty] [--allow-empty-message] [--no-verify] [-e]
+                                    [--author=&lt;author&gt;] [--date=&lt;date&gt;]
+                                    [--cleanup=&lt;mode&gt;] [--[no-]status] [-i | -o]
+                                    [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]]
+                                    [(--trailer &lt;token&gt;[(=|:)&lt;value&gt;])…​]
+                                    [-S[&lt;keyid&gt;]] [--] [&lt;pathspec&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
+                            <h6 class="card-title">.notes</h6>
+                            <p>Añade o inspecciona notas de los objectos</p>
+                            <ins>
+                                <p>
+                                    git notes [list [&lt;object&gt;]] git notes add [-f]
+                                    [--allow-empty] [-F &lt;file&gt; | -m &lt;msg&gt; | (-c |
+                                    -C) &lt;object&gt;] [&lt;object&gt;]
+                                </p>
+                                <p>
+                                    git notes copy [-f] ( --stdin | &lt;from-object&gt;
+                                    [&lt;to-object&gt;] )
+                                </p>
+                                <p>
+                                    git notes append [--allow-empty] [-F &lt;file&gt; | -m
+                                    &lt;msg&gt; | (-c | -C) &lt;object&gt;] [&lt;object&gt;]
+                                </p>
+                                <p>git notes edit [--allow-empty] [&lt;object&gt;]</p>
+                                <p>git notes show [&lt;object&gt;]</p>
+                                <p>
+                                    git notes merge [-v | -q] [-s &lt;strategy&gt; ]
+                                    &lt;notes-ref&gt;
+                                </p>
+                                <p>git notes merge --commit [-v | -q]</p>
+                                <p>git notes merge --abort [-v | -q]</p>
+                                <p>
+                                    git notes remove [--ignore-missing] [--stdin]
+                                    [&lt;object&gt;…​]
+                                </p>
+                                <p>git notes prune [-n] [-v]</p>
+                                <p>git notes get-ref</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num6.png" /></h2>
+                            <h6 class="card-title">.restore</h6>
+                            <p>Restaura los archivos del árbol actual</p>
+                            <ins>
+                                <p>
+                                    git restore [&lt;options&gt;] [--source=&lt;tree&gt;]
+                                    [--staged] [--worktree] [--] &lt;pathspec&gt;…​
+                                </p>
+                                <p>
+                                    git restore [&lt;options&gt;] [--source=&lt;tree&gt;]
+                                    [--staged] [--worktree] --pathspec-from-file=&lt;file&
+                                </p>
+                                gt; [--pathspec-file-nul]
+                                <p>
+                                    git restore (-p|--patch) [&lt;options&gt;]
+                                    [--source=&lt;tree&gt;] [--staged] [--worktree] [--] [&lt;
+                                </p>
+                                pathspec&gt;…​]
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num7.png" /></h2>
+                            <h6 class="card-title">.reset</h6>
+                            <p>Restaura la actual HEAD a una fecha especificada</p>
+                            <ins>
+                                <p>
+                                    git reset [-q] [&lt;tree-ish&gt;] [--] &lt;pathspec&gt;…​
+                                </p>
+                                <p>
+                                    git reset [-q] [--pathspec-from-file=&lt;file&gt;
+                                    [--pathspec-file-nul]] [&lt;tree-ish&gt;]
+                                </p>
+                                <p>
+                                    git reset (--patch | -p) [&lt;tree-ish&gt;] [--]
+                                    [&lt;pathspec&gt;…​]
+                                </p>
+                                <p>
+                                    git reset [--soft | --mixed [-N] | --hard | --merge |
+                                    --keep] [-q] [&lt;commit&gt;]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num8.png" /></h2>
+                            <h6 class="card-title">.rm</h6>
+                            <p>Remueve archivos del árbol actual y del index</p>
+                            <ins>
+                                <p>
+                                    git rm [-f | --force] [-n] [-r] [--cached]
+                                    [--ignore-unmatch] [--quiet]
+                                    [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]]
+                                    [--] [&lt;pathspec&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num9.png" /></h2>
+                            <h6 class="card-title">.mv</h6>
+                            <p>Mueve o renombra a un archivo, directorio o symlink</p>
+                            <ins>
+                                <p>
+                                    git mv [&lt;options&gt;] &lt;source&gt;…​
+                                    &lt;destination&gt;
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
-                <h6 class="card-title">.status</h6>
-                <p>Muestra el estado actual del árbol</p>
-                <ins>
-                  <p>git status [&lt;options&gt;] [--] [&lt;pathspec&gt;…​]</p>
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
-                <h6 class="card-title">.diff</h6>
-                <p>
-                  Muestra los cambios entre commits, commit y arboles en uso.
-                </p>
-                <ins>
-                  <p>
-                    git diff [&lt;options&gt;] [&lt;commit&gt;] [--]
-                    [&lt;path&gt;…​]
-                  </p>
-                  <p>
-                    git diff [&lt;options&gt;] --cached [--merge-base]
-                    [&lt;commit&gt;] [--] [&lt;path&gt;…​]
-                  </p>
-                  <p>
-                    git diff [&lt;options&gt;] [--merge-base] &lt;commit&gt;
-                    [&lt;commit&gt; …​] &lt;commit&gt; [--] [&lt;path&gt;…​]
-                  </p>
-                  <p>
-                    git diff [&lt;options&gt;] &lt;commit&gt;…​&lt;commit&gt;
-                    [--] [&lt;path&gt;…​]
-                  </p>
-                  <p>git diff [&lt;options&gt;] &lt;blob&gt; &lt;blob&gt;</p>
-                  <p>
-                    git diff [&lt;options&gt;] --no-index [--] &lt;path&gt;
-                    &lt;path&gt;
-                  </p>
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
-                <h6 class="card-title">.commit</h6>
-                <p>Graba los cambios al repositorio</p>
-                <ins>
-                  <p>
-                    git commit [-a | --interactive | --patch] [-s] [-v]
-                    [-u&lt;mode&gt;] [--amend] [--dry-run] [(-c | -C | --squash)
-                    &lt;commit&gt; | --fixup [(amend|reword):]&lt;commit&gt;)]
-                    [-F &lt;file&gt; | -m &lt;msg&gt;] [--reset-author]
-                    [--allow-empty] [--allow-empty-message] [--no-verify] [-e]
-                    [--author=&lt;author&gt;] [--date=&lt;date&gt;]
-                    [--cleanup=&lt;mode&gt;] [--[no-]status] [-i | -o]
-                    [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]]
-                    [(--trailer &lt;token&gt;[(=|:)&lt;value&gt;])…​]
-                    [-S[&lt;keyid&gt;]] [--] [&lt;pathspec&gt;…​]
-                  </p>
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
-                <h6 class="card-title">.notes</h6>
-                <p>Añade o inspecciona notas de los objectos</p>
-                <ins>
-                  <p>
-                    git notes [list [&lt;object&gt;]] git notes add [-f]
-                    [--allow-empty] [-F &lt;file&gt; | -m &lt;msg&gt; | (-c |
-                    -C) &lt;object&gt;] [&lt;object&gt;]
-                  </p>
-                  <p>
-                    git notes copy [-f] ( --stdin | &lt;from-object&gt;
-                    [&lt;to-object&gt;] )
-                  </p>
-                  <p>
-                    git notes append [--allow-empty] [-F &lt;file&gt; | -m
-                    &lt;msg&gt; | (-c | -C) &lt;object&gt;] [&lt;object&gt;]
-                  </p>
-                  <p>git notes edit [--allow-empty] [&lt;object&gt;]</p>
-                  <p>git notes show [&lt;object&gt;]</p>
-                  <p>
-                    git notes merge [-v | -q] [-s &lt;strategy&gt; ]
-                    &lt;notes-ref&gt;
-                  </p>
-                  <p>git notes merge --commit [-v | -q]</p>
-                  <p>git notes merge --abort [-v | -q]</p>
-                  <p>
-                    git notes remove [--ignore-missing] [--stdin]
-                    [&lt;object&gt;…​]
-                  </p>
-                  <p>git notes prune [-n] [-v]</p>
-                  <p>git notes get-ref</p>
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num6.png" /></h2>
-                <h6 class="card-title">.restore</h6>
-                <p>Restaura los archivos del árbol actual</p>
-                <ins>
-                  <p>
-                    git restore [&lt;options&gt;] [--source=&lt;tree&gt;]
-                    [--staged] [--worktree] [--] &lt;pathspec&gt;…​
-                  </p>
-                  <p>
-                    git restore [&lt;options&gt;] [--source=&lt;tree&gt;]
-                    [--staged] [--worktree] --pathspec-from-file=&lt;file&
-                  </p>
-                  gt; [--pathspec-file-nul]
-                  <p>
-                    git restore (-p|--patch) [&lt;options&gt;]
-                    [--source=&lt;tree&gt;] [--staged] [--worktree] [--] [&lt;
-                  </p>
-                  pathspec&gt;…​]
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num7.png" /></h2>
-                <h6 class="card-title">.reset</h6>
-                <p>Restaura la actual HEAD a una fecha especificada</p>
-                <ins>
-                  <p>
-                    git reset [-q] [&lt;tree-ish&gt;] [--] &lt;pathspec&gt;…​
-                  </p>
-                  <p>
-                    git reset [-q] [--pathspec-from-file=&lt;file&gt;
-                    [--pathspec-file-nul]] [&lt;tree-ish&gt;]
-                  </p>
-                  <p>
-                    git reset (--patch | -p) [&lt;tree-ish&gt;] [--]
-                    [&lt;pathspec&gt;…​]
-                  </p>
-                  <p>
-                    git reset [--soft | --mixed [-N] | --hard | --merge |
-                    --keep] [-q] [&lt;commit&gt;]
-                  </p>
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num8.png" /></h2>
-                <h6 class="card-title">.rm</h6>
-                <p>Remueve archivos del árbol actual y del index</p>
-                <ins
-                  ><p>
-                    git rm [-f | --force] [-n] [-r] [--cached]
-                    [--ignore-unmatch] [--quiet]
-                    [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]]
-                    [--] [&lt;pathspec&gt;…​]
-                  </p></ins
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num9.png" /></h2>
-                <h6 class="card-title">.mv</h6>
-                <p>Mueve o renombra a un archivo, directorio o symlink</p>
-                <ins>
-                  <p>
-                    git mv [&lt;options&gt;] &lt;source&gt;…​
-                    &lt;destination&gt;
-                  </p>
-                </ins>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section id="Ramificacion">
-      <div class="container">
-        <h6 class="section-subtitle text-center">Comandos Git</h6>
-        <h5 class="section-title text-center mb-6">Ramificacion y fusion</h5>
-        <div class="row">
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
-                <h6 class="card-title">.branch</h6>
-                <p>Lista, crea o elimina ramas</p>
-                <ins>
-                  <p>
-                    git branch [--color[=&lt;when&gt;] | --no-color]
-                    [--show-current] [-v [--abbrev=&lt;n&gt; | --no-abbrev]]
-                    [--column[=&lt;options&gt;] | --no-column]
-                    [--sort=&lt;key&gt;] [--merged [&lt;commit&gt;]]
-                    [--no-merged [&lt;commit&gt;]] [--contains [&lt;commit&gt;]]
-                    [--no-contains [&lt;commit&gt;]] [--points-at
-                    &lt;object&gt;] [--format=&lt;format&gt;] [(-r | --remotes)
-                    | (-a | --all)] [--list] [&lt;pattern&gt;…​]
-                  </p>
-                  <p>
-                    git branch [--track[=(direct|inherit)] | --no-track] [-f]
-                  </p>
-                  [--recurse-submodules] &lt;branchname&gt;
-                  [&lt;start-point&gt;]
-                  <p>
-                    git branch (--set-upstream-to=&lt;upstream&gt; | -u
-                    &lt;upstream&gt;) [&lt;branchname&gt;]
-                  </p>
-                  <p>git branch --unset-upstream [&lt;branchname&gt;]</p>
-                  <p>
-                    git branch (-m | -M) [&lt;oldbranch&gt;] &lt;newbranch&gt;
-                  </p>
-                  <p>
-                    git branch (-c | -C) [&lt;oldbranch&gt;] &lt;newbranch&gt;
-                  </p>
-                  <p>git branch (-d | -D) [-r] &lt;branchname&gt;…​</p>
-                  <p>git branch --edit-description [&lt;branchname&gt;]</p>
-                </ins>
-              </div>
+        <div class="container">
+            <h6 class="section-subtitle text-center">Comandos Git</h6>
+            <h5 class="section-title text-center mb-6">Ramificacion y fusion</h5>
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
+                            <h6 class="card-title">.branch</h6>
+                            <p>Lista, crea o elimina ramas</p>
+                            <ins>
+                                <p>
+                                    git branch [--color[=&lt;when&gt;] | --no-color]
+                                    [--show-current] [-v [--abbrev=&lt;n&gt; | --no-abbrev]]
+                                    [--column[=&lt;options&gt;] | --no-column]
+                                    [--sort=&lt;key&gt;] [--merged [&lt;commit&gt;]]
+                                    [--no-merged [&lt;commit&gt;]] [--contains [&lt;commit&gt;]]
+                                    [--no-contains [&lt;commit&gt;]] [--points-at
+                                    &lt;object&gt;] [--format=&lt;format&gt;] [(-r | --remotes)
+                                    | (-a | --all)] [--list] [&lt;pattern&gt;…​]
+                                </p>
+                                <p>
+                                    git branch [--track[=(direct|inherit)] | --no-track] [-f]
+                                </p>
+                                [--recurse-submodules] &lt;branchname&gt;
+                                [&lt;start-point&gt;]
+                                <p>
+                                    git branch (--set-upstream-to=&lt;upstream&gt; | -u
+                                    &lt;upstream&gt;) [&lt;branchname&gt;]
+                                </p>
+                                <p>git branch --unset-upstream [&lt;branchname&gt;]</p>
+                                <p>
+                                    git branch (-m | -M) [&lt;oldbranch&gt;] &lt;newbranch&gt;
+                                </p>
+                                <p>
+                                    git branch (-c | -C) [&lt;oldbranch&gt;] &lt;newbranch&gt;
+                                </p>
+                                <p>git branch (-d | -D) [-r] &lt;branchname&gt;…​</p>
+                                <p>git branch --edit-description [&lt;branchname&gt;]</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
+                            <h6 class="card-title">.checkout</h6>
+                            <p>
+                                Cambia entre ramas o restaurar los archivos del árbol actual
+                            </p>
+                            <ins>
+                                <p>git checkout [-q] [-f] [-m] [&lt;branch&gt;]</p>
+                                <p>git checkout [-q] [-f] [-m] --detach [&lt;branch&gt;]</p>
+                                <p>git checkout [-q] [-f] [-m] [--detach] &lt;commit&gt;</p>
+                                <p>
+                                    git checkout [-q] [-f] [-m] [[-b|-B|--orphan]
+                                    &lt;new-branch&gt;] [&lt;start-point&gt;]
+                                </p>
+                                <p>
+                                    git checkout
+                                    [-f|--ours|--theirs|-m|--conflict=&lt;style&gt;]
+                                    [&lt;tree-ish&gt;] [--] &lt;pathspec&gt;…​
+                                </p>
+                                <p>
+                                    git checkout
+                                    [-f|--ours|--theirs|-m|--conflict=&lt;style&gt;]
+                                    [&lt;tree-ish&gt;] --pathspec-from-file=&lt;file&gt;
+                                    [--pathspec-file-nul]
+                                </p>
+                                <p>
+                                    git checkout (-p|--patch) [&lt;tree-ish&gt;] [--]
+                                    [&lt;pathspec&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
+                            <h6 class="card-title">.switch</h6>
+                            <p>Cambia entre ramas</p>
+                            <ins>
+                                <p>
+                                    git switch [&lt;options&gt;] [--no-guess] &lt;branch&gt;
+                                </p>
+                                <p>
+                                    git switch [&lt;options&gt;] --detach [&lt;start-point&gt;]
+                                </p>
+                                <p>
+                                    git switch [&lt;options&gt;] (-c|-C) &lt;new-branch&gt;
+                                    [&lt;start-point&gt;]
+                                </p>
+                                <p>
+                                    git switch [&lt;options&gt;] --orphan &lt;new-branch&gt;
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
+                            <h6 class="card-title">.merge</h6>
+                            <p>Fusiona dos o más ramas</p>
+                            <ins>
+                                <p>
+                                    git merge [-n] [--stat] [--no-commit] [--squash]
+                                    [--[no-]edit] [--no-verify] [-s &lt;strategy&gt;] [-X
+                                    &lt;strategy-option&gt;] [-S[&lt;keyid&gt;]]
+                                    [--[no-]allow-unrelated-histories]
+                                    [--[no-]rerere-autoupdate] [-m &lt;msg&gt;] [-F
+                                    &lt;file&gt;] [--into-name &lt;branch&gt;]
+                                    [&lt;commit&gt;…​]
+                                </p>
+                                <p>git merge (--continue | --abort | --quit)</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
+                            <h6 class="card-title">.mergetool</h6>
+                            <p>
+                                Ejecuta la herramienta de resolución de conflictos para
+                                resolver conflictos de merge
+                            </p>
+                            <ins>
+                                git mergetool [--tool=&lt;tool&gt;] [-y | --[no-]prompt]
+                                [&lt;file&gt;…​]
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num6.png" /></h2>
+                            <h6 class="card-title">.log</h6>
+                            <p>Muestra el historial de commits</p>
+                            <ins>
+                                <p>
+                                    git log [&lt;options&gt;] [&lt;revision-range&gt;] [[--]
+                                    &lt;path&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num7.png" /></h2>
+                            <h6 class="card-title">.stash</h6>
+                            <p>Guarda los cambios en un directorio alternativo</p>
+                            <ins>
+                                <p> git stash list [&lt;log-options&gt;] </p>
+                                <p> git stash show [-u | --include-untracked | --only-untracked] [&lt;iff-options&gt;]
+                                    [&lt;stash&gt;]</p>
+                                <p> git stash drop [-q | --quiet] [&lt;stash&gt;]</p>
+                                <p> git stash pop [--index] [-q | --quiet] [&lt;stash&gt;]</p>
+                                <p> git stash apply [--index] [-q | --quiet] [&lt;stash&gt;]</p>
+                                <p> git stash branch &lt;branchnam&gt; [&lt;stash&gt;]</p>
+                                <p> git stash [push [-p | --patch] [-S | --staged] [-k | --[no-]keep-index] [-q |
+                                    --quiet]
+                                    [-u | --include-untracked] [-a | --all] [(-m | --message) &lt;message&gt;]
+                                    [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]]
+                                    [--] [&lt;pathspec&gt;…​]]</p>
+                                <p> git stash save [-p | --patch] [-S | --staged] [-k | --[no-]keep-index] [-q |
+                                    --quiet]
+                                    [-u | --include-untracked] [-a | --all] [&lt;message> ]</p>
+                                <p> git stash clear</p>
+                                <p> git stash create [&lt;message&gt;]</p>
+                                <p> git stash store [(-m | --message) &lt;message&gt;] [-q | --quiet] &lt;commit&gt;</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num8.png" /></h2>
+                            <h6 class="card-title">.tag</h6>
+                            <p>
+                                Crea, lista, elimina o verifica etiquetas de objectos firmadas
+                                con GPG
+                            </p>
+                            <ins>
+                                <p>git tag [-a | -s | -u &lt;key-id&gt;] [-f] [-m &lt;msg&gt; | -F &lt;file&gt;] [-e]
+                                    &lt;tagname&gt; [&lt;commit&gt; | &lt;object&gt;]</p>
+                                <p>git tag -d &lt;tagname&gt;…​</p>
+                                <p>git tag [-n[&lt;num&gt;]] -l [--contains &lt;commit&gt;] [--no-contains
+                                    &lt;commit&gt;]
+                                    [--points-at &lt;object&gt;] [--column[= &lt;options&gt;] | --no-column]
+                                    [--create-reflog] [--sort= &lt;key&gt;] [--format= &lt;format&gt;]
+                                    [--merged &lt;commit&gt;] [--no-merged &lt;commit&gt; ] [ &lt;pattern&gt;…​]</p>
+                                <p>git tag -v [--format=&lt;format&gt;] &lt;tagname&gt;…</p> ​
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num9.png" /></h2>
+                            <h6 class="card-title">.worktree</h6>
+                            <p>Administra múltiples arboles de trabajo.</p>
+                            <ins>
+                                <p>git worktree add [-f] [--detach] [--checkout] [--lock [--reason &lt;string&gt;]]
+                                    [-b &lt;new-branch&gt;] &lt;path&gt; [ &lt;commit-ish&gt;]</p>
+                                <p>git worktree list [-v | --porcelain [-z]]</p>
+                                <p>git worktree lock [--reason &lt;string&gt;] &lt;worktree&gt;</p>
+                                <p>git worktree move &lt;worktree&gt; &lt;new-path&gt;</p>
+                                <p>git worktree prune [-n] [-v] [--expire &lt;expire&gt;]</p>
+                                <p>git worktree remove [-f] &lt;worktree&gt;</p>
+                                <p>git worktree repair [ &lt;path&gt;…​]</p>
+                                <p>git worktree unlock &lt;worktree&gt;</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
-                <h6 class="card-title">.checkout</h6>
-                <p>
-                  Cambia entre ramas o restaurar los archivos del árbol actual
-                </p>
-                <ins>
-                  <p>git checkout [-q] [-f] [-m] [&lt;branch&gt;]</p>
-                  <p>git checkout [-q] [-f] [-m] --detach [&lt;branch&gt;]</p>
-                  <p>git checkout [-q] [-f] [-m] [--detach] &lt;commit&gt;</p>
-                  <p>
-                    git checkout [-q] [-f] [-m] [[-b|-B|--orphan]
-                    &lt;new-branch&gt;] [&lt;start-point&gt;]
-                  </p>
-                  <p>
-                    git checkout
-                    [-f|--ours|--theirs|-m|--conflict=&lt;style&gt;]
-                    [&lt;tree-ish&gt;] [--] &lt;pathspec&gt;…​
-                  </p>
-                  <p>
-                    git checkout
-                    [-f|--ours|--theirs|-m|--conflict=&lt;style&gt;]
-                    [&lt;tree-ish&gt;] --pathspec-from-file=&lt;file&gt;
-                    [--pathspec-file-nul]
-                  </p>
-                  <p>
-                    git checkout (-p|--patch) [&lt;tree-ish&gt;] [--]
-                    [&lt;pathspec&gt;…​]
-                  </p>
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
-                <h6 class="card-title">.switch</h6>
-                <p>Cambia entre ramas</p>
-                <ins>
-                  <p>
-                    git switch [&lt;options&gt;] [--no-guess] &lt;branch&gt;
-                  </p>
-                  <p>
-                    git switch [&lt;options&gt;] --detach [&lt;start-point&gt;]
-                  </p>
-                  <p>
-                    git switch [&lt;options&gt;] (-c|-C) &lt;new-branch&gt;
-                    [&lt;start-point&gt;]
-                  </p>
-                  <p>
-                    git switch [&lt;options&gt;] --orphan &lt;new-branch&gt;
-                  </p>
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
-                <h6 class="card-title">.merge</h6>
-                <p>Fusiona dos o más ramas</p>
-                <ins>
-                  <p>
-                    git merge [-n] [--stat] [--no-commit] [--squash]
-                    [--[no-]edit] [--no-verify] [-s &lt;strategy&gt;] [-X
-                    &lt;strategy-option&gt;] [-S[&lt;keyid&gt;]]
-                    [--[no-]allow-unrelated-histories]
-                    [--[no-]rerere-autoupdate] [-m &lt;msg&gt;] [-F
-                    &lt;file&gt;] [--into-name &lt;branch&gt;]
-                    [&lt;commit&gt;…​]
-                  </p>
-                  <p>git merge (--continue | --abort | --quit)</p>
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
-                <h6 class="card-title">.mergetool</h6>
-                <p>
-                  Ejecuta la herramienta de resolución de conflictos para
-                  resolver conflictos de merge
-                </p>
-                <ins>
-                  git mergetool [--tool=&lt;tool&gt;] [-y | --[no-]prompt]
-                  [&lt;file&gt;…​]
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num6.png" /></h2>
-                <h6 class="card-title">.log</h6>
-                <p>Muestra el historial de commits</p>
-                <ins>
-                  <p>
-                    git log [&lt;options&gt;] [&lt;revision-range&gt;] [[--]
-                    &lt;path&gt;…​]
-                  </p>
-                </ins>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num7.png" /></h2>
-                <h6 class="card-title">.stash</h6>
-                <p>Guarda los cambios en un directorio alternativo</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num8.png" /></h2>
-                <h6 class="card-title">.tag</h6>
-                <p>
-                  Crea, lista, elimina o verifica etiquetas de objectos firmadas
-                  con GPG
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num9.png" /></h2>
-                <h6 class="card-title">.worktree</h6>
-                <p>Administra múltiples arboles de trabajo.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section id="Compartir">
-      <div class="container">
-        <h6 class="section-subtitle text-center">Comandos Git</h6>
-        <h5 class="section-title text-center mb-6">
-          Compartir o actualizar proyectos
-        </h5>
-        <div class="row">
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
-                <h6 class="card-title">.fetch</h6>
-                <p>Descarga los objectos y referencias de otro repositorio</p>
-              </div>
+        <div class="container">
+            <h6 class="section-subtitle text-center">Comandos Git</h6>
+            <h5 class="section-title text-center mb-6">
+                Compartir o actualizar proyectos
+            </h5>
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
+                            <h6 class="card-title">.fetch</h6>
+                            <p>Descarga los objectos y referencias de otro repositorio</p>
+                            <ins>
+                                <p>git fetch [&lt;options&gt;] [&lt;repository&gt; [&lt;refspec&gt;…​]]</p>
+                                <p>git fetch [&lt;options&gt;] &lt;group&gt;</p>
+                                <p>git fetch --multiple [&lt;options&gt;] [(&lt;repository&gt; | &lt;group&gt;)…​]</p>
+                                <p>git fetch --all [&lt;options&gt;]</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
+                            <h6 class="card-title">.pull</h6>
+                            <p>Recupera e integre con otro repositorio o rama local</p>
+                            <ins>
+                                <p>
+                                    git pull [&lt;options&gt;] [&lt;repository&gt; [&lt;refspec&gt;…​]]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
+                            <h6 class="card-title">.push</h6>
+                            <p>Actualiza referencias con sus objectos asociados</p>
+                            <ins>
+                                <p>
+                                    git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
+                                    [--receive-pack=[&lt;git-receive-pack&gt;]
+                                    [--repo=[&lt;repository&gt;] [-f | --force] [-d | --delete] [--prune] [-v |
+                                    --verbose]
+                                    [-u | --set-upstream] [-o [&lt;string&gt; | --push-option=[&lt;string&gt;]
+                                    [--[no-]signed|--signed=(true|false|if-asked)]
+                                    [--force-with-lease[=[&lt;refname&gt;[:[&lt;expect&gt;]] [--force-if-includes]]
+                                    [--no-verify] [[&lt;repository&gt; [[&lt;refspec&gt;…​]]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
+                            <h6 class="card-title">.remote</h6>
+                            <p>Administra un set de repositorios</p>
+                            <ins>
+                                <p>git remote [-v | --verbose]</p>
+                                <p>git remote add [-t &lt;branch&gt;] [-m &lt;master&gt;] [-f] [--[no-]tags]
+                                    [--mirror=(fetch|push)] &lt;name&gt; &lt;URL&gt;</p>
+                                <p>git remote rename [--[no-]progress] &lt;old&gt; &lt;new&gt;</p>
+                                <p>git remote remove &lt;name&gt;</p>
+                                <p>git remote set-head &lt;name&gt; (-a | --auto | -d | --delete | &lt;branch&gt;)
+                                    <p>git remote set-branches [--add] &lt;name&gt; &lt;branch&gt;…​</p>
+                                    <p>git remote get-url [--push] [--all] &lt;name&gt;</p>
+                                    <p>git remote set-url [--push] &lt;name&gt; &lt;newurl&gt; [&lt;oldurl&gt;>]</p>
+                                    <p>git remote set-url --add [--push] &lt;name&gt; &lt;newurl&gt;</p>
+                                    <p>git remote set-url --delete [--push] &lt;name&gt; &lt;URL&gt;</p>
+                                    <p>git remote [-v | --verbose] show [-n] &lt;name&gt;…​</p>
+                                    <p>git remote prune [-n | --dry-run] &lt;name&gt;…​</p>
+                                    <p>git remote [-v | --verbose] update [-p | --prune] [(&lt;group&gt; | <remote>)…​]
+                                    </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
+                            <h6 class="card-title">.submodule</h6>
+                            <p>Inicializa, actualiza o inspecciona submódulos</p>
+                            <ins>
+                                <p>git submodule [--quiet] [--cached]</p>
+                                <p>git submodule [--quiet] add [&lt;options&gt;] [--] &lt;repository&gt; [&lt;path&gt;]
+                                </p>
+                                <p>git submodule [--quiet] status [--cached] [--recursive] [--] [&lt;path&gt;…​]</p>
+                                <p>git submodule [--quiet] init [--] [&lt;path&gt;…​]</p>
+                                <p>git submodule [--quiet] deinit [-f|--force] (--all|[--] &lt;path&gt;…​)</p>
+                                <p>git submodule [--quiet] update [&lt;options&gt;] [--] [&lt;path&gt;…​]</p>
+                                <p>git submodule [--quiet] set-branch [&lt;options>] [--] &lt;path&gt;</p>
+                                <p>git submodule [--quiet] set-url [--] &lt;path&gt; &lt;newurl&gt;</p>
+                                <p>git submodule [--quiet] summary [&lt;options&gt;] [--] [&lt;path&gt;…​]</p>
+                                <p>git submodule [--quiet] foreach [--recursive] &lt;command&gt;</p>
+                                <p>git submodule [--quiet] sync [--recursive] [--] [&lt;path&gt;…​]</p>
+                                <p>git submodule [--quiet] absorbgitdirs [--] [&lt;path&gt;…​]</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
-                <h6 class="card-title">.pull</h6>
-                <p>Recupera e integre con otro repositorio o rama local</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
-                <h6 class="card-title">.push</h6>
-                <p>Actualiza referencias con sus objectos asociados</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
-                <h6 class="card-title">.remote</h6>
-                <p>Administra un set de repositorios</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
-                <h6 class="card-title">.submodule</h6>
-                <p>Inicializa, actualiza o inspecciona submódulos</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section id="Inspeccion">
-      <div class="container">
-        <h6 class="section-subtitle text-center">Comandos Git</h6>
-        <h5 class="section-title text-center mb-6">
-          Inspección y actualización de proyectos
-        </h5>
-        <div class="row">
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
-                <h6 class="card-title">.show</h6>
-                <p>
-                  Muestra varios tipos de información si son commits, trees,
-                  blobs, tags
-                </p>
-              </div>
+        <div class="container">
+            <h6 class="section-subtitle text-center">Comandos Git</h6>
+            <h5 class="section-title text-center mb-6">
+                Inspección y actualización de proyectos
+            </h5>
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
+                            <h6 class="card-title">.show</h6>
+                            <p>
+                                Muestra varios tipos de información si son commits, trees,
+                                blobs, tags
+                            </p>
+                            <ins>
+                                <p>
+                                    git show [&lt;options&gt;] [ object&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
+                            <h6 class="card-title">.log</h6>
+                            <p>Muestra logs de commits</p>
+                            <ins>
+                                <p>git log [&lt;options&gt;] [&lt;revision-range&gt;] [[--] &lt;path&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
+                            <h6 class="card-title">.diff</h6>
+                            <p>Muestra los cambios entre commits, commit y arbol actual</p>
+                            <ins>
+                                <p>git diff [&lt;options&gt;] [&lt;commit&gt;] [--] [&lt;path&gt;…​]</p>
+                                <p>git diff [&lt;options&gt;] --cached [--merge-base] [&lt;commit&gt;] [--]
+                                    [&lt;path&gt;…​]</p>
+                                <p>git diff [&lt;options&gt;] [--merge-base] &lt;commit&gt; [&lt;commit&gt;…​]
+                                    &lt;commit&gt; [--] [&lt;path&gt;…​]</p>
+                                <p>git diff [&lt;options&gt;] &lt;commit&gt;…​&lt;commit&gt; [--] [&lt;path&gt;…​]</p>
+                                <p>git diff [&lt;options&gt;] &lt;blob&gt; &lt;blob&gt;</p>
+                                <p>git diff [&lt;options&gt;] --no-index [--] &lt;path&gt; &lt;path&gt;</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
+                            <h6 class="card-title">.difftool</h6>
+                            <p>Muestra cambios usando herramientas diff comunes</p>
+                            <ins>
+                                <p>
+                                    git difftool [&lt;options&gt;] [​&lt;commit&gt; [​&lt;commit&gt;]] [--] [<path>…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
+                            <h6 class="card-title">.range-diff</h6>
+                            <p>
+                                Compara dos rangos de commits (ej. dos versiones de una rama)
+                            </p>
+                            <ins>
+                                <p>
+                                    git range-diff [--color=[​&lt;when&gt;]] [--no-color] [​&lt;diff-options&gt;]
+                                    [--no-dual-color] [--creation-factor=​&lt;factor&gt;]
+                                    [--left-only | --right-only]
+                                    ( ​&lt;range1&gt; ​&lt;range2&gt; | ​&lt;rev1&gt;…​​&lt;rev2&gt; | ​&lt;base&gt;
+                                    ​&lt;rev1&gt; ​&lt;rev2&gt; )
+                                    [[--] ​&lt;path&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num6.png" /></h2>
+                            <h6 class="card-title">.shortlog</h6>
+                            <p>Resume el resultado del git log</p>
+                            <ins>
+                                <p>
+                                    git shortlog [&lt;options&gt;] [&lt;revision-range&gt;] [[--] &lt;path&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num7.png" /></h2>
+                            <h6 class="card-title">.describe</h6>
+                            <p>
+                                Da a un objecto un nombre leíble basado en una referencia
+                                disponible
+                            </p>
+                            <ins>
+                                <p>git describe [--all] [--tags] [--contains] [--abbrev=&lt;n&gt;]
+                                    [&lt;commit-ish&gt;…​]</p>
+                                <p>git describe [--all] [--tags] [--contains] [--abbrev=&lt;n&gt;]
+                                    --dirty[=&lt;mark&gt;]</p>
+                                <p>git describe &lt;blob&gt;</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
-                <h6 class="card-title">.log</h6>
-                <p>Muestra logs de commits</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
-                <h6 class="card-title">.diff</h6>
-                <p>Muestra los cambios entre commits, commit y arbol actual</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
-                <h6 class="card-title">.difftool</h6>
-                <p>Muestra cambios usando herramientas diff comunes</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
-                <h6 class="card-title">.range-diff</h6>
-                <p>
-                  Compara dos rangos de commits (ej. dos versiones de una rama)
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num6.png" /></h2>
-                <h6 class="card-title">.shortlog</h6>
-                <p>Resume el resultado del git log</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num7.png" /></h2>
-                <h6 class="card-title">.describe</h6>
-                <p>
-                  Da a un objecto un nombre leíble basado en una referencia
-                  disponible
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section id="Patching">
-      <div class="container">
-        <h6 class="section-subtitle text-center">Comandos Git</h6>
-        <h5 class="section-title text-center mb-6">Patching</h5>
-        <div class="row">
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
-                <h6 class="card-title">.apply</h6>
-                <p>Aplica un parche a un archivo o al index</p>
-              </div>
+        <div class="container">
+            <h6 class="section-subtitle text-center">Comandos Git</h6>
+            <h5 class="section-title text-center mb-6">Patching</h5>
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
+                            <h6 class="card-title">.apply</h6>
+                            <p>Aplica un parche a un archivo o al index</p>
+                            <ins>
+                                <p>
+                                    git apply [--stat] [--numstat] [--summary] [--check] [--index | --intent-to-add]
+                                    [--3way]
+                                    [--apply] [--no-add] [--build-fake-ancestor=&lt;file&gt;] [-R | --reverse]
+                                    [--allow-binary-replacement | --binary] [--reject] [-z]
+                                    [-p&lt;n&gt;] [-C&lt;n&gt;] [--inaccurate-eof] [--recount] [--cached]
+                                    [--ignore-space-change | --ignore-whitespace]
+                                    [--whitespace=(nowarn|warn|fix|error|error-all)]
+                                    [--exclude=&lt;path&gt;] [--include=&lt;path&gt;] [--directory=&lt;root&gt;]
+                                    [--verbose | --quiet] [--unsafe-paths] [--allow-empty] [&lt;patch&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
+                            <h6 class="card-title">.cherry-pick</h6>
+                            <p>Aplica los cambios introducidos por un commit existente</p>
+                            <ins>
+                                <p>git cherry-pick [--edit] [-n] [-m &lt;parent-number&gt;] [-s] [-x] [--ff]
+                                    [-S[&lt;keyid&gt;]] &lt;commit&gt;…​</p>
+                                <p>git cherry-pick (--continue | --skip | --abort | --quit)</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
+                            <h6 class="card-title">.diff</h6>
+                            <p>Muestra los cambios entre commits, commit y arbol actual</p>
+                            <ins>
+                                <p>git diff [&lt;options&gt;] [&lt;commit&gt;] [--] [&lt;path&gt;…​]​</p>
+                                <p>git diff [&lt;options&gt;] --cached [--merge-base] [&lt;commit&gt;] [--]
+                                    [&lt;path&gt;…​]​</p>
+                                <p>git diff [&lt;options&gt;] [--merge-base] &lt;commit&gt; [&lt;commit&gt;…​]
+                                    &lt;commit&gt; [--] [&lt;path&gt;…​]​</p>
+                                <p>git diff [&lt;options&gt;] &lt;commit&gt;…​&lt;commit&gt; [--] [&lt;path&gt;…​]​</p>
+                                <p>git diff [&lt;options&gt;] &lt;blob&gt; &lt;blob&gt;​</p>
+                                <p>git diff [&lt;options&gt;] --no-index [--] &lt;path&gt; &lt;path&gt;​</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
+                            <h6 class="card-title">.rebase</h6>
+                            <p>Reaplica commits encima de otra base</p>
+                            <ins>
+                                <p>git rebase [-i | --interactive] [&lt;options&gt;] [--exec &lt;cmd&gt;]
+                                    [--onto &lt;newbase&gt; | --keep-base] [&lt;upstream&gt; [&lt;branch&gt;]]</p>
+                                <p>git rebase [-i | --interactive] [&lt;options&gt;] [--exec &lt;cmd&gt;] [--onto
+                                    &lt;newbase&gt;]
+                                    --root [&lt;branch&gt;]</p>
+                                <p>git rebase (--continue | --skip | --abort | --quit | --edit-todo |
+                                    --show-current-patch)</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
+                            <h6 class="card-title">.revert</h6>
+                            <p>Revierte un commit existente</p>
+                            <ins>
+                                <p>git revert [--[no-]edit] [-n] [-m [&lt;parent-number&gt;] [-s] [-S[[&lt;keyid&gt;]]
+                                    [&lt;commit&gt;…​</p>
+                                <p>git revert (--continue | --skip | --abort | --quit)</p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
-                <h6 class="card-title">.cherry-pick</h6>
-                <p>Aplica los cambios introducidos por un commit existente</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
-                <h6 class="card-title">.diff</h6>
-                <p>Muestra los cambios entre commits, commit y arbol actual</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num4.png" /></h2>
-                <h6 class="card-title">.rebase</h6>
-                <p>Reaplica commits encima de otra base</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num5.png" /></h2>
-                <h6 class="card-title">.revert</h6>
-                <p>Revierte un commit existente</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section id="Debugging">
-      <div class="container">
-        <h6 class="section-subtitle text-center">Comandos Git</h6>
-        <h5 class="section-title text-center mb-6">Debugging</h5>
-        <div class="row">
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
-                <h6 class="card-title">.bisect</h6>
-                <p>
-                  Usa una búsqueda binaria para encontrar el commmit que
-                  introdujo un bug
-                </p>
-              </div>
+        <div class="container">
+            <h6 class="section-subtitle text-center">Comandos Git</h6>
+            <h5 class="section-title text-center mb-6">Debugging</h5>
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num1.png" /></h2>
+                            <h6 class="card-title">.bisect</h6>
+                            <p>
+                                Usa una búsqueda binaria para encontrar el commmit que
+                                introdujo un bug
+                            </p>
+                            <ins>
+                                <p>
+                                    git bisect &lt;subcommand&gt; &lt;options&gt;
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
+                            <h6 class="card-title">.blame</h6>
+                            <p>
+                                Muestra que revisión y que autor modifico la última línea de
+                                un archivo
+                            </p>
+                            <ins>
+                                <p>
+                                    git blame [-c] [-b] [-l] [--root] [-t] [-f] [-n] [-s] [-e] [-p] [-w] [--incremental]
+                                    [-L &lt;rangeh&gt;] [-S &lt;revs-fileh&gt;] [-M] [-C] [-C] [-C]
+                                    [--since=&lt;dateh&gt;]
+                                    [--ignore-rev &lt;revh&gt;] [--ignore-revs-file &lt;fileh&gt;]
+                                    [--color-lines] [--color-by-age] [--progress] [--abbrev=&lt;nh&gt;]
+                                    [&lt;revh&gt; | --contents &lt;fileh&gt; | --reverse &lt;revh&gt;..&lt;revh&gt;]
+                                    [--] &lt;fileh&gt;
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
+                            <h6 class="card-title">.grep</h6>
+                            <p>Imprime las líneas con un patrón similar</p>
+                            <ins>
+                                <p>
+                                    git grep [-a | --text] [-I] [--textconv] [-i | --ignore-case] [-w | --word-regexp]
+                                    [-v | --invert-match] [-h|-H] [--full-name]
+                                    [-E | --extended-regexp] [-G | --basic-regexp]
+                                    [-P | --perl-regexp]
+                                    [-F | --fixed-strings] [-n | --line-number] [--column]
+                                    [-l | --files-with-matches] [-L | --files-without-match]
+                                    [(-O | --open-files-in-pager) [&lt;pager>]]
+                                    [-z | --null]
+                                    [ -o | --only-matching ] [-c | --count] [--all-match] [-q | --quiet]
+                                    [--max-depth &lt;depth&gt;] [--[no-]recursive]
+                                    [--color[=&lt;when&gt;] | --no-color]
+                                    [--break] [--heading] [-p | --show-function]
+                                    [-A &lt;post-context&gt;] [-B &lt;pre-context&gt;] [-C &lt;context&gt;]
+                                    [-W | --function-context]
+                                    [(-m | --max-count) &lt;num&gt;]
+                                    [--threads &lt;num&gt;]
+                                    [-f &lt;file&gt;] [-e] &lt;pattern&gt;
+                                    [--and|--or|--not|(|)|-e &lt;pattern&gt;…​]
+                                    [--recurse-submodules] [--parent-basename &lt;basename&gt;]
+                                    [ [--[no-]exclude-standard] [--cached | --no-index | --untracked] | &lt;tree&gt;…​]
+                                    [--] [&lt;pathspec&gt;…​]
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num2.png" /></h2>
-                <h6 class="card-title">.blame</h6>
-                <p>
-                  Muestra que revisión y que autor modifico la última línea de
-                  un archivo
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h2 class="mb-4"><img src="assets/imgs/num3.png" /></h2>
-                <h6 class="card-title">.grep</h6>
-                <p>Imprime las líneas con un patrón similar</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section class="has-bg-img py-md">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-5 col-lg-4">
-            <img src="assets/imgs/logo.png" class="w-100 img-background mb-3" />
-          </div>
-          <div class="col-md-7 col-lg-8">
-            <h6 class="section-subtitle mb-0">Conclusión personal</h6>
-            <h6 class="section-title mb-3">Glosario</h6>
-            <p>
-              El VCS GIT nos proporciona varios comandos útiles para la utilidad
-              de este, desde el que nos deja ver los cambios entre versiones o
-              quien modifico la última línea del código;
-            </p>
-            <p>Este nos da las herramientas para llevar un control eficaz</p>
-          </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/logo.png" class="w-100 img-background mb-3" />
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h6 class="section-subtitle mb-0">Conclusión personal</h6>
+                    <h6 class="section-title mb-3">Glosario</h6>
+                    <p>
+                        El VCS GIT nos proporciona varios comandos útiles para la utilidad
+                        de este, desde el que nos deja ver los cambios entre versiones o
+                        quien modifico la última línea del código;
+                    </p>
+                    <p>Este nos da las herramientas para llevar un control eficaz</p>
+                    <ins>
+                        <p>
+                            sadadsadsads
+                        </p>
+                    </ins>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="has-bg-img py-0">
-      <div class="container">
-        <div class="footer">
-          <div class="footer-lists">
-            <ul class="list">
-              <li class="list-head">
-                <h6 class="font-weight-bold">Autor</h6>
-              </li>
-              <li class="list-body">
-                <a href="#" class="logo">
-                  <img src="assets/imgs/logo.png" />
-                  <h6>Winter Contingency</h6>
-                  <h6>Daniel López Quintero 18401150</h6>
-                </a>
-              </li>
-            </ul>
-            <ul class="list"></ul>
-            <ul class="list"></ul>
-          </div>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-lists">
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">Autores</h6>
+                        </li>
+                        <li class="list-body">
+                            <a href="#" class="logo">
+                                <img src="assets/imgs/logo.png" />
+                                <h6>Winter Contingency</h6>
+                                <h6>Daniel López Quintero 18401150</h6> 
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list"></ul>
+                    <ul class="list"></ul>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     <script src="assets/js/creative-studio.js"></script>
-  </body>
+</body>
+
 </html>
